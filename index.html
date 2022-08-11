@@ -4,44 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="/estilos.css">
+    <title>CV</title>
 </head>
 <body>
-    <h1>Sebastian Caballero</h1>
 
+<header>
+    <h1>Sebastian Caballero</h1>
+</header>
+
+<section> 
     <h2>Datos Personales</h2>
 
-    <!--<img src="/proyectoWeb/assets/images/CV.jpg" alt="Foto CV" >-->
-    <picture>
-        <source srcset="/proyectoWeb/assets/images/CV.jpg">
-            <img src="/proyectoWeb/assets/images/CV.jpg" alt="Foto CV">
-    </picture>
+<div class="datosout">
+    <img id="foto" src="/assets/images/CV.jpg" alt="Foto CV">
     
-    <ul>
-        <li>Fecha de Nacimiento: 26/11/1984</li>
-        <li>Domicilio: Lobos 91 Wilde</li>
-        <li>Teléfono: 1131866717</li>
-        <li>Mail: sacaballero@hipotecario.com.ar</li>
-    </ul>
+    <div id="datos">
+        <p><span>Fecha de Nacimiento:</span>  26/11/1984</p>
+        <p><span>Domicilio:</span> Lobos 91 (Wilde)</p>
+        <p><span>Teléfono:</span> 1131866717</p>
+        <p><span>Mail:</span> sacaballero@hipotecario.com.ar</p>
+    </div>
+</div>
 
-    <h2>Estudios</h2>
+    <h2>Estudios</h2>   
 
-    <dl>
-        <dt>Secundario</dt>   
-        <dd>Perito Mercantil en Instituto Zaccarias</dd>
-        <dt>Terciario</dt>
-        <dd>Técnico Superior en Liderazgo Ontológico en ICP</dd>
-    </dl>
+    <div id="datos1">
+    
+        <p><span>Secundario</span></p>   
+        <p>Perito Mercantil en Instituto Zaccarias</p>
+        <p><span>Terciario</span></p>
+        <p>Técnico Superior en Liderazgo Ontológico en ICP</p>
+    
+    </div>
 
     <h2>Experiencia Laboral</h2>
 
-    <dl>
-        <dt>2015 a la actualidad</dt>
-        <dd>Banco Hipotecario</dd>
-        <dt>2014 al 2015</dt>
-        <dd>IKE Asistencia Argentina</dd>
+    <div class="trabajo1">
 
-    </dl>
+        <img class="fotolab" src="/assets/images/500px-Logo_Banco_Hipotecario.svg.png" alt="BH">
+       <div class="intrabajo"> 
+        <h4>Banco Hipotecario - 2022 a hoy</h4>
+            <p>Analista QA</p>
+    
+        <h4>Banco Hipotecario - 2016 a 2022</h4>
+            <p>Oficial de Negocios en Sucursal Lanús, Avellaneda y Almagro</p>
+   
+        <h4>Banco Hipotecario - 2015 a 2016</h4>
+            <p>Asesoramiento Procrear</p>
+        </div>
+    </div>
+
+    <div class="trabajo2">
+        <img class="fotolab1" src="/assets/images/Dar-de-Baja-Ike-Asistencia-Argentina.webp.crdownload" alt="IKE">
+        
+        <div class="intrabajo">         
+        <h4>IKE Asistencia - 2015 a 2016</h4>
+            <p>Venta de paquete de asistencias</p>
+        </div>    
+        
+    </div>
+
+
+
+</section>
+
+<footer>
+        <h2>Mis Redes Sociales</h2>
+
+        <div id="datos1">
+            <p>Facebook</p>
+            <p>Youtube</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+        </div>
+    
+
+</footer>
 
 
 

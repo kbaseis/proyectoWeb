@@ -1,0 +1,64 @@
+
+
+/* 
+
+SELECTORES SIMPLES
+    1) Elementales
+        Universal -> * (selecciona todo)
+        Etiqueta -> Nobre de la etiqueta (h1, h2, p)
+
+    2) de atributo
+        ID -> id del elemento (#nombre del ID)
+        class -> clase del elemento (.nombre del class)
+        otros atributos -> [atributo]       ([href, lang])
+                           [atributo=valor] 
+                           [atributo^=valor] ^empieza con el valor
+                           [atributo*=valor] *coincide con el valor
+                           [atributo$=valor] $termina con el valor
+                           [atributo|valor] |incluye -
+SELECTORES COMPLEJOS
+    1) Agrupados
+        selectores simples más (,)
+        .class1,
+        .class2,
+        .class3{ propiedad=valor;
+        }
+    2) Combinadores
+        descendiente -> selección dentro de una etiqueta (hijos)    
+            div .class{
+            }
+        hermanos -> al mismo nivel
+            .class + .class (hermano que esté inmediatamente después)
+            .class ~ .class (todos los hermanos que estén después)
+        hijo directo -> sólo los que están en el siguiente nivel (no nietos)
+            .class > .class
+    3) Pseudoclases-Pseudoelementos
+
+ESPECIFICIDAD Y CASCADA
+            Etiquetas y pseudoelementos         001
+            Clases, atributos y pseudoclases    010
+            Ids                                 100
+            Estilos de línea                   1000
+            !important GANA A TODO
+            Cascada -> Funciona siempre que la especificidad sobre el elemento sea la misma
+        CSS Specificity Graph Generator (web para ver si la especificidad está bien)
+
+HERENCIA
+    Capacidad de heredar propiedades los elementos (ej color, tamaño de fuente se hereda, los enlaces no heredan)
+            Para forzar a que hereden propiedades 
+                .class {
+                    color: inherit
+                }
+            Para que no hereden estilos
+                .class{
+                    color: initial
+                }
+
+ESTILOS
+    Inspeccionar (F12)
+    Resetear estilos de navegador (en google escribir "normalize")
+        Descargar el archivo y asociarlo en HTML antes de "estilos.css"
+
+Instalar "prepros" para incluir propiedades no incorporadas en todos los navegadores aún
+
+*/
